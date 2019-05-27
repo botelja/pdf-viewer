@@ -13,7 +13,16 @@
 
 <body>
 
-    <script src="https://unpkg.com/pdfjs-dist@2.0.943/build/pdf.js"></script>
+    <div class="top-bar">
+        <button class="btn" id="prev-page"><i class="fas fa-arrow-circle-left"></i> Prev Page</button>
+        <button class="btn" id="next-page">Next Page <i class="fas fa-arrow-circle-right"></i></button>
+        <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+    </div>
+
+    <canvas id="page-render"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.2/pdf.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
